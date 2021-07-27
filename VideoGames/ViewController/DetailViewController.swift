@@ -44,7 +44,7 @@ class DetailViewController: UIViewController {
                 }
                 if let videoGameDetail = videoGameDetail {
                     self.detailTextView.text =
-                        ("\(videoGameDetail.nameOriginal)\n" + "Release Date: \(videoGameDetail.released)\n" + "Metacritic Rate: \(videoGameDetail.metacritic)\n" + " \(videoGameDetail.welcomeDescription)").replacingOccurrences(of: "<[^>]+>", with: "", options: .regularExpression, range: nil)
+                        ("\(videoGameDetail.nameOriginal)\n" + "Release Date: \(videoGameDetail.released)\n" + "Metacritic Rate: \(videoGameDetail.metacritic)\n" + "\(videoGameDetail.welcomeDescription)").replacingOccurrences(of: "<[^>]+>", with: "", options: .regularExpression, range: nil)
                 }
             }
         }
